@@ -1,7 +1,5 @@
 # domgwas
 
-[![Tests](https://github.com/unculturedbacterium/domgwas/actions/workflows/tests.yml/badge.svg)](https://github.com/unculturedbacterium/domgwas/actions/workflows/tests.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 `domgwas` is a pure-Python, dominance-aware GWAS pipeline for quantitative
 traits. It streams PLINK 1 binary genotypes, constructs additive

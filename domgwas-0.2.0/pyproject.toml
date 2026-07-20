@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "domgwas"
+version = "0.2.0"
+description = "Pure-Python, pip-installable, dominance-aware GWAS pipeline with ADDO-style inheritance classification"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "unculturedbacterium" }]
+keywords = ["GWAS", "dominance", "genetics", "quantitative-genetics", "mixed-model"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "numpy>=1.22",
+    "pandas>=1.4",
+    "scipy>=1.8",
+    "scikit-learn>=1.0",
+    "pyarrow>=8.0",
+]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.5"]
+test = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/unculturedbacterium/domgwas"
+Repository = "https://github.com/unculturedbacterium/domgwas"
+Issues = "https://github.com/unculturedbacterium/domgwas/issues"
+Documentation = "https://github.com/unculturedbacterium/domgwas#readme"
+
+[project.scripts]
+domgwas = "domgwas.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["domgwas*"]

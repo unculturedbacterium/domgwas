@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use domgwas, please cite this software and the associated methods paper."
+title: "domgwas: a dominance-aware quantitative-trait GWAS pipeline"
+type: software
+authors:
+  - name: "unculturedbacterium"
+version: 0.2.0
+date-released: 2026-07-20
+url: "https://github.com/unculturedbacterium/domgwas"
+repository-code: "https://github.com/unculturedbacterium/domgwas"
+license: MIT
+keywords:
+  - GWAS
+  - dominance
+  - quantitative genetics
+  - mixed model

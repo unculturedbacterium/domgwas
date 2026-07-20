@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "checks": {
+    "pytest": {
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "numerical_validation": {
+      "gls_variants_compared": 100,
+      "gls_max_abs_neglog10p_difference": 7.771561172376096e-15,
+      "gls_max_abs_beta_difference": 1.6653345369377348e-15,
+      "covariate_max_abs_neglog10p_difference": 6.217248937900877e-15,
+      "covariate_max_abs_beta_difference": 2.7755575615628914e-16,
+      "categorical_covariates_one_hot_encoded_in_core": true,
+      "per_trait_sample_sizes": {
+        "complete": 400,
+        "missing_37": 363
+      },
+      "complete_case_across_traits_sample_sizes": {
+        "complete": 363,
+        "missing_37": 363
+      },
+      "classification_mean_coarse_accuracy": 0.864,
+      "h2_max_absolute_bias": 0.02343458619634084,
+      "h2_min_convergence_rate": 1.0
+    },
+    "simulation_rows": {
+      "null": 9000,
+      "power": 1050,
+      "family": 2000,
+      "polygenic": 200
+    },
+    "external_comparators": {
+      "rows": 7,
+      "minimum_rho": 0.3642400975978981
+    },
+    "scaling_rows": {
+      "variants": 4,
+      "samples": 4,
+      "large_n": 3
+    },
+    "real_comparison": {
+      "rows": 12,
+      "minimum_spearman_rho": 0.979678496123786,
+      "same_top_positions": 10
+    },
+    "full_scan": {
+      "autosomal_variants": 7659686,
+      "testable_variants": 4686464,
+      "chromosomes": 20
+    },
+    "report": {
+      "lines": 273,
+      "figure_references": 13,
+      "result_section_figure_references": 10
+    },
+    "validated_release_candidate": {
+      "version": "0.2.0.dev1",
+      "sha256": "7b70cef06fd64c57e66ea3e2726e9e4e87d07b06516a3a2196a4b6bc6bb6b62f",
+      "release_note": "Version 0.2.0 uses the same validated implementation; release-only changes are metadata, documentation, packaging, and the CLI."
+    },
+    "stable_release": {
+      "version": "0.2.0",
+      "wheel_sha256": "2167dc300b3fed3b6a71cfdba769b80596e1fca54c96f06a3510639e9ceffba0",
+      "verification": "Wheel built successfully; isolated import, installed CLI, source tests, and synthetic end-to-end example passed."
+    }
+  }
+}

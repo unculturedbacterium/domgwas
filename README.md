@@ -65,7 +65,7 @@ results = domgwas.run_gwas(
 )
 ```
 
-The complete runnable example at [`examples/quickstart.py`](examples/quickstart.py)
+The complete runnable example at [`examples/quickstart.py`](domgwas-0.2.0/examples/quickstart.py)
 generates synthetic PLINK data, runs domgwas, and writes results without
 requiring external data.
 
@@ -106,7 +106,7 @@ Results include raw and standardized additive/dominance effect estimates,
 standard errors, marginal and conditional p-values, `-log10(p)` scores,
 AA/AB/BB counts, MAF, genotype-filter status, chromosome-specific heritability,
 sample size, signed `d/a`, and inheritance labels. See
-[`docs/EXPECTED_OUTPUTS.md`](docs/EXPECTED_OUTPUTS.md) for the output contract.
+[`docs/EXPECTED_OUTPUTS.md`](domgwas-0.2.0/docs/EXPECTED_OUTPUTS.md) for the output contract.
 
 ## Validation
 
@@ -115,9 +115,9 @@ tested in LD-aware null and power simulations, compared with PLINK 1.9,
 PLINK 2, GCTA, and ADDO, and benchmarked through one million variants. The
 included validation report records methods, results, figures, and limitations:
 
-- [`docs/VALIDATION_REPORT.md`](docs/VALIDATION_REPORT.md)
-- [`docs/publication_result_audit.json`](docs/publication_result_audit.json)
-- [`docs/COVARIATE_SUPPORT.md`](docs/COVARIATE_SUPPORT.md)
+- [`docs/VALIDATION_REPORT.md`](domgwas-0.2.0/docs/VALIDATION_REPORT.md)
+- [`docs/publication_result_audit.json`](domgwas-0.2.0/docs/publication_result_audit.json)
+- [`docs/COVARIATE_SUPPORT.md`](domgwas-0.2.0/docs/COVARIATE_SUPPORT.md)
 
 Private or potentially restricted real genotype and phenotype files are not
 included in this repository. The report retains aggregate results only.

@@ -27,18 +27,7 @@ operator.
 
 ## Installation
 
-Clone or download this repository, enter its root directory, and run:
-
-```bash
-python -m pip install .
-```
-
-For development and tests:
-
-```bash
-python -m pip install -e ".[test,plot]"
-python -m pytest -q
-```
+Clone or download this repository:
 
 Python 3.9 or newer is required. Direct dependencies are NumPy, pandas,
 SciPy, scikit-learn, and PyArrow.
@@ -134,13 +123,5 @@ included in this repository. The report retains aggregate results only.
   approximation error must be assessed before inference.
 - Associations do not establish biological causality.
 
-## Reproducibility and citation
+## citation
 
-Run the test suite with `python -m pytest -q`. The release history is in
-[`CHANGELOG.md`](CHANGELOG.md), and citation metadata is in
-[`CITATION.cff`](CITATION.cff). For a paper, archive the exact GitHub release
-in Zenodo and add the resulting DOI to the citation metadata.
-
-## License
-
-Released under the [MIT License](LICENSE).
